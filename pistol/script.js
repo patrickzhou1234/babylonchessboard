@@ -5,7 +5,7 @@ var createScene = function (canvas, engine) {
     var scene = new BABYLON.Scene(engine);
 
     // This creates and positions a free camera (non-mesh)
-    camera = new BABYLON.ArcRotateCamera("camera", 0, -5, 0, new BABYLON.Vector3.Zero(), scene);
+    camera = new BABYLON.ArcRotateCamera("camera", -5, -10, 0, new BABYLON.Vector3.Zero(), scene);
 
     // This targets the camera to scene origin
     camera.setTarget(BABYLON.Vector3.Zero());
