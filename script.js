@@ -5,7 +5,7 @@ var createScene = function (canvas, engine) {
     var scene = new BABYLON.Scene(engine);
 
     // This creates and positions a free camera (non-mesh)
-    camera = new BABYLON.ArcRotateCamera("camera", 0, 50, 0, new BABYLON.Vector3(0, 50, -10), scene);
+    camera = new BABYLON.ArcRotateCamera("camera", 0, 50, 0, new BABYLON.Vector3(0, 0, -10), scene);
 
     // This targets the camera to scene origin
     camera.setTarget(BABYLON.Vector3.Zero());
@@ -21,7 +21,7 @@ var createScene = function (canvas, engine) {
 
     // Our built-in 'sphere' shape.
     var building = BABYLON.SceneLoader.Append("", "Chess Scene.glb", scene, function (meshes) {
-      scene.createDefaultCameraOrLight(true, true, true);
+      camera.target = meshes[0];
     });
 
     return scene;
