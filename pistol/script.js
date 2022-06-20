@@ -20,7 +20,7 @@ var createScene = function (canvas, engine) {
     light.intensity = 0.7;
 
     // Our built-in 'sphere' shape.
-    var building = BABYLON.SceneLoader.Append("", "guncompiled.babylon", scene, function (meshes) {
+    var building = BABYLON.SceneLoader.ImportMesh("", "", "guncompiled.babylon", scene, function (meshes) {
       camera.target = meshes[0];
     });
 
