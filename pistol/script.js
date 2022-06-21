@@ -5,7 +5,7 @@ var createScene = function (canvas, engine) {
     var scene = new BABYLON.Scene(engine);
 
     // This creates and positions a free camera (non-mesh)
-    camera = new BABYLON.ArcRotateCamera("camera", -5, 0, -10, new BABYLON.Vector3.Zero(), scene);
+    camera = new BABYLON.ArcRotateCamera("camera", -10, -10, 100, new BABYLON.Vector3.Zero(), scene);
 
     // This targets the camera to scene origin
     camera.setTarget(BABYLON.Vector3.Zero());
@@ -20,7 +20,7 @@ var createScene = function (canvas, engine) {
     light.intensity = 0.7;
 
     // Our built-in 'sphere' shape.
-    var building = BABYLON.SceneLoader.ImportMesh("", "", "guncompiled.babylon", scene, function (meshes) {
+    var building = BABYLON.SceneLoader.Append("", "guncompiled.glb", scene, function (meshes) {
       camera.target = meshes[0];
     });
 
