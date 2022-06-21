@@ -47,7 +47,7 @@ Ni 1.000000
 d 1.000000
 illum 2
 map_Kd ./textures/handgun_S.jpg
-map_Bump -bm 5.000000 ./textures/handgun_N.jpg
+map_Bump ./textures/handgun_N.jpg
 map_Ks ./textures/handgun_S.jpg
 
 newmtl handgun_handgun_C.jpg
@@ -60,5 +60,5 @@ Ni 1.000000
 d 1.000000
 illum 2
 map_Kd ./textures/handgun_C.jpg
-map_Bump -bm 5.000000 ./textures/handgun_N.jpg
+map_Bump ./textures/handgun_N.jpg
 map_Ks ./textures/handgun_S.jpg
