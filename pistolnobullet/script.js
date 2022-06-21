@@ -15,7 +15,7 @@ var createScene = function (canvas, engine) {
     
     camera.wheelPrecision = 50;
     
-    camera.lowerRadiusLimit = 2;
+    camera.lowerRadiusLimit = 2.4;
     camera.upperRadiusLimit = 20;
 
     // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
