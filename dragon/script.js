@@ -26,7 +26,7 @@ var createScene = function (canvas, engine) {
 
     // Our built-in 'sphere' shape.
     var building = BABYLON.SceneLoader.Append("", "dragon.glb", scene, function (meshes) {
-      meshes[0].scaling = new BABYLON.Vector3(5, 5, 5);
+      meshes[0].scaling = new BABYLON.Vector3(10, 10, 10);
       camera.target = meshes[0];
     });
 
